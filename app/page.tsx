@@ -6,6 +6,7 @@ import { ArrowRight, CheckCircle2, Clock3, MapPin, Menu, MessageCircle, Phone, S
 const phone = '0735448042';
 const wa = '254735448042';
 const map = 'https://www.google.com/maps/search/?api=1&query=Salanka+Inn+%26+Guest+House+Eastern+Bypass+Nairobi';
+export const dynamic = 'force-dynamic';
 const photos = [
   'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/4c9bdc90.jpg?impolicy=resizecrop&ra=fit&rw=1200',
   'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/54095a33.jpg?impolicy=resizecrop&ra=fit&rw=1200',
@@ -108,7 +109,7 @@ export default function Home() {
   </div>
 
 </div>
-          <p className="mt-4 text-sm text-[#68736c]">Property photos are sourced from the available Salanka Inn listing for this demo. Confirm current rooms, food service and facilities directly with the property.</p>
+          <p className="mt-4 text-sm text-[#68736c]">Property photos are sourced from the available Salanka Inn listing for this demo. Confirm current rooms and facilities directly with the property.</p>
         </div>
       </section>
 
