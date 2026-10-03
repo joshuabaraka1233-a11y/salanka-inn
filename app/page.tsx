@@ -47,7 +47,7 @@ export default function Home() {
     <main>
       <Nav />
       <section id="home" className="relative flex min-h-[720px] items-end overflow-hidden bg-[#1a251f] text-white">
-        <div className="absolute inset-0 opacity-80" style={{ backgroundImage: `linear-gradient(90deg,rgba(10,17,13,.92),rgba(10,17,13,.48)),url(${photos[0]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-80" style={{ backgroundImage: `linear-gradient(90deg,rgba(10,17,13,.92),rgba(10,17,13,.48)),url(${photos[0]}),url(${fallbackFood})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="grain absolute inset-0 opacity-20" />
         <div className="container relative z-10 pb-24 pt-40">
           <p className="mb-5 text-sm uppercase tracking-[.35em] text-[#e3bd7a]">Eastern Bypass · Nairobi</p>
