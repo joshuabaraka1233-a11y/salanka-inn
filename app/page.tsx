@@ -90,11 +90,11 @@ export default function Home() {
 
       <section id="experience" className="reveal bg-[#0b1722] py-24 text-white">
         <div className="container">
-          <div className="max-w-2xl"><p className="text-sm uppercase tracking-[.3em] text-[#d5ad6b]">The essentials</p><h2 className="serif mt-3 text-5xl">What you can expect</h2></div>
+          <div className="max-w-2xl"><p className="text-sm uppercase tracking-[.3em] text-[#d9bd7a]">The essentials</p><h2 className="serif mt-3 text-5xl">What you can expect</h2></div>
           <div className="mt-14 grid gap-6 md:grid-cols-3 stagger-group">
             <div className="reveal-item"><Card title="Rooms" text="Accommodation for guests looking for a practical Nairobi stay." />
             </div><div className="reveal-item"><Card title="Food & drink" text="A dedicated food and drink experience is part of the property listing." />
-            </div><div className="reveal-item"><Card title="Convenient location" text="Find us on Eastern Bypass in the Mihango area of Nairobi." />
+            </div><div className="reveal-item"><Card title="Convenient location" text="Find us on Eastern Bypass in the Mihango area of Nairobi." /></div>
           </div>
         </div>
       </section>
