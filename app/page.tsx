@@ -7,8 +7,10 @@ const phone = '0735448042';
 const wa = '254735448042';
 const map = 'https://www.google.com/maps/search/?api=1&query=Salanka+Inn+%26+Guest+House+Eastern+Bypass+Nairobi';
 const photos = [
-  'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmsRTAht9i_bNJ60FfJdSFwpVXoLhV_dVZ0-hn2v6Lvo6PiA1AKocTHGt_yKK-AbPKwoi4eB3LTX3qYTYG2IY7uYmXRSmbpblL7q9mvp44kkPlm8UrpQ0LKppCjN5_V_USb5QccvA=w224-h298-k-no',
-  'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFmOPEPOtzkoHaO5Mp0Wr_zL4GjwZLew1EJ6VxjV4HHdrgon7L702D-mBOOKV3X82SIpu7TJz4aPeIDakmQZbFa8xkHaCw4fWF6S1sJ7vhjsK1ALGbs5JO7j8STDYmZdR5Xp-3=w224-h298-k-no'
+  'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/4c9bdc90.jpg?impolicy=resizecrop&ra=fit&rw=1200',
+  'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/54095a33.jpg?impolicy=resizecrop&ra=fit&rw=1200',
+  'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/08075452.jpg?h=800&impolicy=fcrop&w=1200',
+  'https://images.trvl-media.com/lodging/42000000/41360000/41353800/41353701/a8762372.jpg?impolicy=resizecrop&ra=fit&rw=1200'
 ];
 
 function Nav() {
@@ -44,7 +46,7 @@ export default function Home() {
     <main>
       <Nav />
       <section id="home" className="relative flex min-h-[720px] items-end overflow-hidden bg-[#1a251f] text-white">
-        <div className="absolute inset-0 opacity-70" style={{ backgroundImage: `linear-gradient(90deg,rgba(10,17,13,.88),rgba(10,17,13,.35)),url(${photos[0]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        <div className="absolute inset-0 opacity-80" style={{ backgroundImage: `linear-gradient(90deg,rgba(10,17,13,.92),rgba(10,17,13,.48)),url(${photos[0]})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
         <div className="grain absolute inset-0 opacity-20" />
         <div className="container relative z-10 pb-24 pt-40">
           <p className="mb-5 text-sm uppercase tracking-[.35em] text-[#e3bd7a]">Eastern Bypass · Nairobi</p>
@@ -68,7 +70,7 @@ export default function Home() {
               <Feature icon={<MapPin />} title="Eastern Bypass" /><Feature icon={<Clock3 />} title="Easy to reach" />
             </div>
           </div>
-          <div className="overflow-hidden rounded-[2rem] shadow-soft"><img src={photos[1]} alt="Salanka Inn & Guest House" className="h-[520px] w-full object-cover" /></div>
+          <div className="overflow-hidden rounded-[2rem] shadow-soft"><img src={photos[3]} alt="Salanka Inn guest room" className="h-[520px] w-full object-cover" /></div>
         </div>
       </section>
 
@@ -86,7 +88,13 @@ export default function Home() {
       <section id="gallery" className="py-24">
         <div className="container">
           <p className="text-sm uppercase tracking-[.3em] text-[#b88942]">Gallery</p><h2 className="serif mt-3 text-5xl">A glimpse of Salanka</h2>
-          <div className="mt-10 grid gap-5 md:grid-cols-2"><img src={photos[0]} className="h-[520px] w-full rounded-[2rem] object-cover shadow-soft" alt="Salanka Inn" /><img src={photos[1]} className="h-[520px] w-full rounded-[2rem] object-cover shadow-soft" alt="Salanka Inn food and drink area" /></div>
+          <div className="mt-10 grid gap-5 md:grid-cols-12">
+  <div className="md:col-span-7 overflow-hidden rounded-[2rem] shadow-soft"><img src={photos[0]} className="h-[420px] w-full object-cover transition duration-500 hover:scale-[1.02] md:h-[620px]" alt="Salanka Inn garden and exterior" /></div>
+  <div className="grid gap-5 md:col-span-5">
+    <div className="overflow-hidden rounded-[2rem] shadow-soft"><img src={photos[1]} className="h-[300px] w-full object-cover transition duration-500 hover:scale-[1.02]" alt="Salanka Inn exterior" /></div>
+    <div className="overflow-hidden rounded-[2rem] shadow-soft"><img src={photos[2]} className="h-[300px] w-full object-cover transition duration-500 hover:scale-[1.02]" alt="Salanka Inn room" /></div>
+  </div>
+</div>
           <p className="mt-4 text-sm text-[#68736c]">Images shown are from the available Google listing and are subject to change. Confirm current rooms and facilities directly with the property.</p>
         </div>
       </section>
